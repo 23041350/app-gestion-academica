@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil — Gestión Académica</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/perfil.css" />
+</head>
+<body>
+
+  <button id="theme-btn" aria-label="Cambiar tema">
+    <i class="ti ti-moon" id="theme-icon"></i>
+  </button>
+
+  <div class="screen5">
+    <div class="profile-header">
+      <div class="avatar">RM</div>
+      <div class="profile-info">
+        <div class="profile-name">Roberto Mendez</div>
+        <div class="profile-email">roberto.mendez@itdurango.edu.mx</div>
+        <div class="premium-badge"><i class="ti ti-star" style="font-size:11px"></i>Plan Premium</div>
+      </div>
+      <div class="back-btn" onclick="goToHome()">
+        <i class="ti ti-arrow-left"></i>
+      </div>
+    </div>
+    <div class="body5">
+      <div>
+        <div class="section-label5">Información académica</div>
+        <div class="info-card">
+          <div class="info-row">
+            <i class="ti ti-building"></i>
+            <span class="info-label">Universidad</span>
+            <span class="info-value">Instituto Tecnológico de Durango</span>
+            <i class="ti ti-chevron-right info-chevron"></i>
+          </div>
+          <div class="info-row">
+            <i class="ti ti-school"></i>
+            <span class="info-label">Carrera</span>
+            <span class="info-value">Ingeniería en Sistemas</span>
+            <i class="ti ti-chevron-right info-chevron"></i>
+          </div>
+          <div class="info-row">
+            <i class="ti ti-list-numbers"></i>
+            <span class="info-label">Semestre actual</span>
+            <span class="info-value">6° semestre</span>
+            <i class="ti ti-chevron-right info-chevron"></i>
+          </div>
+          <div class="info-row">
+            <i class="ti ti-books"></i>
+            <span class="info-label">Plan de estudios</span>
+            <span class="info-value">Plan 2020</span>
+            <i class="ti ti-chevron-right info-chevron"></i>
+          </div>
+          <div class="info-row">
+            <i class="ti ti-calendar"></i>
+            <span class="info-label">Fecha de registro</span>
+            <span class="info-value" style="font-weight:400;color:var(--text-secondary)">15 ago 2024</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section-label5">Notificaciones y recordatorios</div>
+        <div class="notif-card">
+          <div class="notif-row">
+            <i class="ti ti-bell notif-icon"></i>
+            <div class="notif-text">
+              <div class="notif-title">Notificaciones push</div>
+              <div class="notif-sub">Tareas y exámenes próximos</div>
+            </div>
+            <div class="toggle"><div class="toggle-knob"></div></div>
+          </div>
+          <div class="notif-row">
+            <i class="ti ti-mail notif-icon"></i>
+            <div class="notif-text">
+              <div class="notif-title">Recordatorios por email</div>
+              <div class="notif-sub">Resumen diario a las 8:00 am</div>
+            </div>
+            <div class="toggle off"><div class="toggle-knob"></div></div>
+          </div>
+          <div class="notif-row">
+            <i class="ti ti-message-circle notif-icon"></i>
+            <div class="notif-text">
+              <div class="notif-title">Alertas en la app</div>
+              <div class="notif-sub">Cuando se acerque un vencimiento</div>
+            </div>
+            <div class="toggle"><div class="toggle-knob"></div></div>
+          </div>
+          <div class="notif-row">
+            <i class="ti ti-clock notif-icon"></i>
+            <div class="notif-text">
+              <div class="notif-title">Anticipación de recordatorio</div>
+              <div class="notif-sub">Avisar con 24 horas de anticipación</div>
+            </div>
+            <span class="info-value" style="font-size:13px">24h</span>
+            <i class="ti ti-chevron-right" style="font-size:16px;color:var(--text-secondary)"></i>
+          </div>
+        </div>
+      </div>
+      <div class="logout-btn">
+        <i class="ti ti-logout"></i>
+        <span>Cerrar sesión</span>
+      </div>
+    </div>
+    <div class="btn-volver" onclick="goToHome()">← Volver al inicio</div>
+  </div>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/perfil.js"></script>
+</body>
+</html>
