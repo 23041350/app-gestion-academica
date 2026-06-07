@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GestiónAcadémica — Inicio</title>
+  
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+
+  <button id="theme-btn" aria-label="Cambiar tema">
+    <i class="ti ti-moon" id="theme-icon"></i>
+  </button>
+
+  <div class="screen">
+    <!-- Status bar -->
+    <div class="status-bar">
+      <span>9:26</span>
+      <div style="display:flex;gap:6px;align-items:center">
+        <i class="ti ti-wifi" style="font-size:13px"></i>
+        <i class="ti ti-battery-2" style="font-size:13px"></i>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+      <div class="greeting">Bienvenido de vuelta</div>
+      <div class="student-name">Roberto Mendez</div>
+      <span class="semester-badge">Semestre 6 · Ingeniería en Sistemas</span>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="scroll-area">
+      <!-- Stats -->
+      <div>
+        <div class="section-label">Resumen del semestre</div>
+        <div class="stats-row" id="statsContainer"></div>
+      </div>
+
+      <!-- Alerta examen -->
+      <div class="exam-alert" id="examAlert"></div>
+
+      <!-- Materias -->
+      <div>
+        <div class="section-label">Mis materias</div>
+        <div class="materias-list" id="materiasContainer"></div>
+      </div>
+
+      <!-- Tareas -->
+      <div>
+        <div class="section-label">Próximas tareas</div>
+        <div class="tasks-list" id="tareasContainer"></div>
+      </div>
+    </div>
+
+    <!-- Nav bar -->
+    <div class="nav-bar">
+      <div class="nav-item active" data-page="index">
+        <i class="ti ti-home"></i>
+        <span class="nav-label">Inicio</span>
+      </div>
+      <div class="nav-item" data-page="tareas">
+        <i class="ti ti-checklist"></i>
+        <span class="nav-label">Tareas</span>
+      </div>
+      <div class="nav-item" data-page="agenda">
+        <i class="ti ti-calendar"></i>
+        <span class="nav-label">Agenda</span>
+      </div>
+      <div class="nav-item" data-page="progreso">
+        <i class="ti ti-chart-bar"></i>
+        <span class="nav-label">Progreso</span>
+      </div>
+      <div class="nav-item" data-page="perfil">
+        <i class="ti ti-user"></i>
+        <span class="nav-label">Perfil</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/theme.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
