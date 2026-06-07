@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tareas — Gestión Académica</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/tareas.css" />
+</head>
+<body>
+
+  <button id="theme-btn" aria-label="Cambiar tema">
+    <i class="ti ti-moon" id="theme-icon"></i>
+  </button>
+
+  <div class="screen2">
+    <div class="topbar">
+      <div class="topbar-row">
+        <div class="back-btn" onclick="goToHome()">
+          <i class="ti ti-arrow-left"></i>
+        </div>
+        <span class="page-title">Tareas</span>
+        <div class="add-btn"><i class="ti ti-plus"></i></div>
+      </div>
+      <div class="filter-row">
+        <span class="filter-chip sel">Todas</span>
+        <span class="filter-chip">Pendientes</span>
+        <span class="filter-chip">En progreso</span>
+        <span class="filter-chip">Completadas</span>
+        <span class="filter-chip">Alta prioridad</span>
+      </div>
+    </div>
+    <div class="task-list" id="taskListContainer"></div>
+    <div class="btn-volver" onclick="goToHome()">← Volver al inicio</div>
+  </div>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/tareas.js"></script>
+</body>
+</html>

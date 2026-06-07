@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progreso — Gestión Académica</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/progreso.css" />
+</head>
+<body>
+
+  <button id="theme-btn" aria-label="Cambiar tema">
+    <i class="ti ti-moon" id="theme-icon"></i>
+  </button>
+
+  <div class="screen4">
+    <div class="topbar4">
+      <div class="topbar-row4">
+        <div class="back-btn" onclick="goToHome()">
+          <i class="ti ti-arrow-left"></i>
+        </div>
+        <span class="page-title4">Mi progreso</span>
+        <i class="ti ti-dots" style="font-size:20px;color:var(--text-secondary);cursor:pointer"></i>
+      </div>
+    </div>
+    <div class="body4">
+      <div>
+        <div class="section-label4" style="margin-bottom:8px">Semestre actual</div>
+        <div class="overall-card">
+          <div class="donut-wrap">
+            <svg viewBox="0 0 72 72">
+              <circle cx="36" cy="36" r="28" fill="none" stroke="var(--bg-secondary)" stroke-width="8"/>
+              <circle cx="36" cy="36" r="28" fill="none" stroke="var(--accent)" stroke-width="8"
+                stroke-dasharray="175.93" stroke-dashoffset="61.58" stroke-linecap="round" transform="rotate(-90 36 36)"/>
+            </svg>
+            <div class="donut-label">65%</div>
+          </div>
+          <div class="overall-info">
+            <div class="oi-title">Avance general</div>
+            <div class="oi-stat"><span>Tareas completadas</span><span>21 / 32</span></div>
+            <div class="oi-stat"><span>Tiempo total</span><span>14h 30min</span></div>
+            <div class="oi-stat"><span>Materias al día</span><span>4 de 6</span></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section-label4" style="margin-bottom:8px">Por materia</div>
+        <div class="mat-prog-card">
+          <div class="mpc-header">
+            <div class="color-square" style="background:var(--accent)"></div>
+            <span class="mpc-name">Lenguajes de Interfaz</span>
+            <span class="mpc-pct" style="color:var(--accent)">65%</span>
+          </div>
+          <div class="mpc-bar-bg"><div class="mpc-bar-fill" style="width:65%;background:var(--accent)"></div></div>
+          <div class="mpc-stats">
+            <div class="mpc-stat"><div class="mpc-stat-val">8</div><div class="mpc-stat-lbl">Completadas</div></div>
+            <div class="mpc-stat"><div class="mpc-stat-val">12</div><div class="mpc-stat-lbl">Totales</div></div>
+            <div class="mpc-stat"><div class="mpc-stat-val">5h</div><div class="mpc-stat-lbl">Estudio</div></div>
+          </div>
+          <div style="font-size:12px;color:var(--text-secondary);margin-top:8px">Tiempo de estudio esta semana</div>
+          <div class="time-row">
+            <div class="time-bar-bg"><div class="time-bar-fill" style="width:65%;background:var(--accent)"></div></div>
+            <span class="time-val">5h</span>
+          </div>
+        </div>
+      </div>
+      <div class="mat-prog-card">
+        <div class="mpc-header">
+          <div class="color-square" style="background:var(--text-success)"></div>
+          <span class="mpc-name">Ingeniería de Software</span>
+          <span class="mpc-pct" style="color:var(--text-success)">40%</span>
+        </div>
+        <div class="mpc-bar-bg"><div class="mpc-bar-fill" style="width:40%;background:var(--text-success)"></div></div>
+        <div class="mpc-stats">
+          <div class="mpc-stat"><div class="mpc-stat-val">4</div><div class="mpc-stat-lbl">Completadas</div></div>
+          <div class="mpc-stat"><div class="mpc-stat-val">10</div><div class="mpc-stat-lbl">Totales</div></div>
+          <div class="mpc-stat"><div class="mpc-stat-val">3h</div><div class="mpc-stat-lbl">Estudio</div></div>
+        </div>
+        <div style="font-size:12px;color:var(--text-secondary);margin-top:8px">Tiempo de estudio esta semana</div>
+        <div class="time-row">
+          <div class="time-bar-bg"><div class="time-bar-fill" style="width:40%;background:var(--text-success)"></div></div>
+          <span class="time-val">3h</span>
+        </div>
+      </div>
+      <div class="mat-prog-card">
+        <div class="mpc-header">
+          <div class="color-square" style="background:var(--text-warning)"></div>
+          <span class="mpc-name">Ecuaciones Diferenciales</span>
+          <span class="mpc-pct" style="color:var(--text-warning)">80%</span>
+        </div>
+        <div class="mpc-bar-bg"><div class="mpc-bar-fill" style="width:80%;background:var(--text-warning)"></div></div>
+        <div class="mpc-stats">
+          <div class="mpc-stat"><div class="mpc-stat-val">8</div><div class="mpc-stat-lbl">Completadas</div></div>
+          <div class="mpc-stat"><div class="mpc-stat-val">10</div><div class="mpc-stat-lbl">Totales</div></div>
+          <div class="mpc-stat"><div class="mpc-stat-val">4h</div><div class="mpc-stat-lbl">Estudio</div></div>
+        </div>
+        <div style="font-size:12px;color:var(--text-secondary);margin-top:8px">Tiempo de estudio esta semana</div>
+        <div class="time-row">
+          <div class="time-bar-bg"><div class="time-bar-fill" style="width:80%;background:var(--text-warning)"></div></div>
+          <span class="time-val">4h</span>
+        </div>
+      </div>
+    </div>
+    <div class="btn-volver" onclick="goToHome()">← Volver al inicio</div>
+  </div>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/progreso.js"></script>
+</body>
+</html>

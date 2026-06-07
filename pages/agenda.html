@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda — Gestión Académica</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/agenda.css" />
+</head>
+<body>
+
+  <button id="theme-btn" aria-label="Cambiar tema">
+    <i class="ti ti-moon" id="theme-icon"></i>
+  </button>
+
+  <div class="screen3">
+    <div class="topbar3">
+      <div class="topbar-row3">
+        <div class="back-btn" onclick="goToHome()">
+          <i class="ti ti-arrow-left"></i>
+        </div>
+        <span class="page-title3">Agenda</span>
+        <div style="display:flex;gap:10px;align-items:center">
+          <i class="ti ti-plus" style="font-size:20px;color:var(--text-secondary);cursor:pointer"></i>
+          <i class="ti ti-bell" style="font-size:20px;color:var(--text-secondary);cursor:pointer"></i>
+        </div>
+      </div>
+      <div class="month-nav">
+        <i class="ti ti-chevron-left" aria-label="Mes anterior"></i>
+        <span class="month-label">Junio 2026</span>
+        <i class="ti ti-chevron-right" aria-label="Mes siguiente"></i>
+      </div>
+      <div class="cal-grid">
+        <div class="cal-dow">L</div><div class="cal-dow">M</div><div class="cal-dow">M</div><div class="cal-dow">J</div><div class="cal-dow">V</div><div class="cal-dow">S</div><div class="cal-dow">D</div>
+        <div class="cal-day other-month">26</div><div class="cal-day other-month">27</div><div class="cal-day other-month">28</div><div class="cal-day other-month">29</div><div class="cal-day other-month">30</div><div class="cal-day other-month">31</div><div class="cal-day">1</div>
+        <div class="cal-day">2</div><div class="cal-day today has-event">3</div><div class="cal-day has-event">4</div><div class="cal-day">5</div><div class="cal-day has-task">6</div><div class="cal-day">7</div><div class="cal-day">8</div>
+        <div class="cal-day">9</div><div class="cal-day has-event">10</div><div class="cal-day">11</div><div class="cal-day">12</div><div class="cal-day has-task">13</div><div class="cal-day">14</div><div class="cal-day">15</div>
+        <div class="cal-day">16</div><div class="cal-day">17</div><div class="cal-day has-event">18</div><div class="cal-day">19</div><div class="cal-day">20</div><div class="cal-day">21</div><div class="cal-day">22</div>
+        <div class="cal-day">23</div><div class="cal-day">24</div><div class="cal-day">25</div><div class="cal-day has-task">26</div><div class="cal-day">27</div><div class="cal-day">28</div><div class="cal-day">29</div>
+        <div class="cal-day">30</div>
+      </div>
+      <div style="display:flex;gap:14px;margin-top:8px;padding-top:8px;border-top:0.5px solid var(--border)">
+        <span style="font-size:11px;color:var(--text-secondary);display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:50%;background:var(--text-danger);display:inline-block"></span>Examen</span>
+        <span style="font-size:11px;color:var(--text-secondary);display:flex;align-items:center;gap:5px"><span style="width:7px;height:7px;border-radius:50%;background:var(--text-warning);display:inline-block"></span>Tarea</span>
+      </div>
+    </div>
+    <div class="agenda-body"></div>
+    <div class="btn-volver" onclick="goToHome()">← Volver al inicio</div>
+  </div>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/agenda.js"></script>
+</body>
+</html>
