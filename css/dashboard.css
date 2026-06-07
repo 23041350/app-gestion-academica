@@ -1,0 +1,91 @@
+/* ========== SCROLL AREA ========== */
+.scroll-area {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: var(--bg-page);
+  transition: background 0.3s;
+}
+
+/* ========== STATS ROW ========== */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 10px;
+}
+
+.stat-card {
+  padding: 14px;
+}
+
+.stat-card i  { font-size: 19px; margin-bottom: 6px; display: block; }
+.stat-value   { font-size: 22px; font-weight: 500; color: var(--text-primary); }
+.stat-label   { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+
+/* ========== ALERTA EXAMEN ========== */
+.exam-alert {
+  background: var(--bg-info);
+  border: 1px solid var(--border-md);
+  border-radius: 14px;
+  padding: 12px 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.exam-alert i { font-size: 18px; color: var(--text-info); flex-shrink: 0; }
+.exam-alert-text { font-size: 13px; color: var(--text-info); }
+.exam-alert-bold { font-weight: 500; }
+
+/* ========== MATERIA CARDS ========== */
+.materia-card {
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.materia-card:last-child { margin-bottom: 0; }
+
+.materia-dot   { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.materia-info  { flex: 1; min-width: 0; }
+.materia-nombre {
+  font-size: 14px; 
+  font-weight: 500; 
+  color: var(--text-primary);
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+.materia-sub { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+.prog-bg   { height: 4px; background: var(--bg-secondary); border-radius: 4px; margin-top: 8px; transition: background 0.3s; }
+.prog-fill { height: 4px; border-radius: 4px; }
+
+/* ========== TASK CARDS ========== */
+.task-card {
+  padding: 14px;
+  margin-bottom: 8px;
+}
+
+.task-card:last-child { margin-bottom: 0; }
+
+.task-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.task-title  { font-size: 14px; font-weight: 500; color: var(--text-primary); }
+.task-meta {
+  font-size: 12px; 
+  color: var(--text-secondary);
+  margin-top: 7px; 
+  display: flex; 
+  gap: 14px;
+}
+.task-meta i { font-size: 13px; vertical-align: -2px; margin-right: 3px; }
+
+/* ========== LISTAS ========== */
+.materias-list, .tasks-list {
+  display: flex; 
+  flex-direction: column; 
+  gap: 8px;
+}

@@ -1,0 +1,179 @@
+/* ========== TOPBAR PROGRESO ========== */
+.topbar4 { 
+  background: var(--bg-surface); 
+  border-bottom: 0.5px solid var(--border); 
+  padding: 14px 20px 14px; 
+  transition: background 0.3s, border-color 0.3s; 
+}
+
+.topbar-row4 { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+}
+
+.page-title4 { 
+  font-size: 20px; 
+  font-weight: 500; 
+  color: var(--text-primary); 
+}
+
+/* ========== CUERPO ========== */
+.body4 { 
+  flex: 1; 
+  padding: 16px; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 14px; 
+  overflow-y: auto; 
+  background: var(--bg-page); 
+}
+
+.section-label4 { 
+  font-size: 11px; 
+  font-weight: 500; 
+  color: var(--text-secondary); 
+  text-transform: uppercase; 
+  letter-spacing: 0.07em; 
+}
+
+/* ========== TARJETA GENERAL ========== */
+.overall-card { 
+  padding: 16px; 
+  display: flex; 
+  gap: 16px; 
+  align-items: center; 
+}
+
+.donut-wrap { 
+  position: relative; 
+  width: 72px; 
+  height: 72px; 
+  flex-shrink: 0; 
+}
+
+.donut-wrap svg { width: 72px; height: 72px; }
+.donut-label { 
+  position: absolute; 
+  inset: 0; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: 16px; 
+  font-weight: 500; 
+  color: var(--text-primary); 
+}
+
+.overall-info { flex: 1; }
+.oi-title { 
+  font-size: 14px; 
+  font-weight: 500; 
+  color: var(--text-primary); 
+  margin-bottom: 6px; 
+}
+
+.oi-stat { 
+  font-size: 12px; 
+  color: var(--text-secondary); 
+  display: flex; 
+  justify-content: space-between; 
+  margin-top: 4px; 
+}
+
+/* ========== TARJETA POR MATERIA ========== */
+.mat-prog-card { 
+  padding: 14px; 
+}
+
+.mpc-header { 
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+  margin-bottom: 10px; 
+}
+
+.color-square { 
+  width: 10px; 
+  height: 10px; 
+  border-radius: 3px; 
+  flex-shrink: 0; 
+}
+
+.mpc-name { 
+  font-size: 14px; 
+  font-weight: 500; 
+  color: var(--text-primary); 
+  flex: 1; 
+}
+
+.mpc-pct { 
+  font-size: 14px; 
+  font-weight: 500; 
+}
+
+.mpc-bar-bg { 
+  height: 6px; 
+  background: var(--bg-secondary); 
+  border-radius: 6px; 
+  transition: background 0.3s; 
+}
+
+.mpc-bar-fill { 
+  height: 6px; 
+  border-radius: 6px; 
+  transition: width 0.4s; 
+}
+
+.mpc-stats { 
+  display: grid; 
+  grid-template-columns: repeat(3, minmax(0,1fr)); 
+  gap: 8px; 
+  margin-top: 10px; 
+}
+
+.mpc-stat { 
+  background: var(--bg-secondary); 
+  border-radius: 12px; 
+  padding: 8px; 
+  text-align: center; 
+  transition: background 0.3s; 
+}
+
+.mpc-stat-val { 
+  font-size: 15px; 
+  font-weight: 500; 
+  color: var(--text-primary); 
+}
+
+.mpc-stat-lbl { 
+  font-size: 11px; 
+  color: var(--text-secondary); 
+  margin-top: 2px; 
+}
+
+.time-row { 
+  display: flex; 
+  align-items: center; 
+  gap: 8px; 
+  margin-top: 8px; 
+}
+
+.time-bar-bg { 
+  flex: 1; 
+  height: 4px; 
+  background: var(--bg-secondary); 
+  border-radius: 4px; 
+  transition: background 0.3s; 
+}
+
+.time-bar-fill { 
+  height: 4px; 
+  border-radius: 4px; 
+}
+
+.time-val { 
+  font-size: 12px; 
+  color: var(--text-secondary); 
+  min-width: 32px; 
+  text-align: right; 
+}

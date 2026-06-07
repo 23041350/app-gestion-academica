@@ -1,0 +1,164 @@
+/* ========== CONTENEDOR PRINCIPAL ========== */
+.screen, .screen2, .screen3, .screen4, .screen5 {
+  width: 100%;
+  max-width: 390px;
+  background: var(--bg-page);
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+  transition: background 0.3s, border-color 0.3s;
+}
+
+/* ========== STATUS BAR ========== */
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 6px;
+  font-size: 12px;
+  font-family: 'DM Mono', monospace;
+  color: var(--text-secondary);
+  background: var(--bg-surface);
+  transition: background 0.3s;
+}
+
+/* ========== HEADER ========== */
+.header {
+  padding: 4px 20px 16px;
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border);
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.greeting { 
+  font-size: 13px; 
+  color: var(--text-secondary); 
+  margin-bottom: 2px; 
+}
+
+.student-name { 
+  font-size: 21px; 
+  font-weight: 500; 
+  color: var(--text-primary); 
+}
+
+.semester-badge {
+  display: inline-block;
+  background: var(--accent-light);
+  color: var(--text-info);
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-top: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* ========== BOTÓN DE TEMA ========== */
+#theme-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--toggle-border);
+  background: var(--toggle-bg);
+  box-shadow: var(--toggle-shadow);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, border-color 0.3s, transform 0.15s;
+}
+
+#theme-btn:hover { transform: scale(1.08); }
+#theme-btn:active { transform: scale(0.95); }
+#theme-btn i {
+  font-size: 20px;
+  color: var(--toggle-icon);
+  transition: color 0.3s;
+}
+
+/* ========== BOTÓN VOLVER ========== */
+.back-btn { 
+  width: 32px; 
+  height: 32px; 
+  border-radius: 50%; 
+  background: var(--bg-secondary); 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.back-btn:hover { background: var(--border); }
+.back-btn i { font-size: 18px; color: var(--text-primary); }
+
+.btn-volver {
+  margin: 12px 16px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent);
+  transition: all 0.2s;
+}
+
+.btn-volver:hover {
+  background: var(--accent-light);
+  border-color: var(--accent);
+}
+
+/* ========== TARJETAS ========== */
+.stat-card, .materia-card, .task-card, .event-card, .mat-prog-card, .info-card, .notif-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+/* ========== BADGES ========== */
+.priority-badge, .dif-badge, .event-type-badge, .materia-pill, .status-pill {
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.p-alta   { background: var(--bg-danger);   color: var(--text-danger); }
+.p-media  { background: var(--bg-warning);  color: var(--text-warning); }
+.badge-exam { background: var(--bg-danger); color: var(--text-danger); }
+.badge-task { background: var(--bg-warning); color: var(--text-warning); }
+.s-pendiente { background: var(--bg-secondary); color: var(--text-secondary); }
+.s-progreso { background: var(--bg-warning); color: var(--text-warning); }
+.s-completada { background: var(--bg-success); color: var(--text-success); }
+
+/* ========== NAV BAR ========== */
+.nav-bar {
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0 18px;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.nav-item { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 3px; 
+  cursor: pointer; 
+}
+
+.nav-item i  { font-size: 21px; color: var(--text-secondary); transition: color 0.2s; }
+.nav-label   { font-size: 10px; color: var(--text-secondary); transition: color 0.2s; }
+.nav-item.active i,
+.nav-item.active .nav-label { color: var(--accent); }
